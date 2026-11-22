@@ -12,10 +12,10 @@ public class MgwServiceImpl implements MgwService {
         PaymentResponseDTO paymentResponseDTO = new PaymentResponseDTO();
         String paymentMethod = paymentRequestDTO.getPaymentMethod();
         if(paymentMethod.equals("paypal")){
-            paymentResponseDTO.setMessage("Payment processed successfully via PayPal");
+            paymentResponseDTO.setMessage("Payment processed successfully via PayPal!");
             paymentResponseDTO.setStatus("SUCCESS");
         }else if(paymentMethod.equals("applepay")){
-            paymentResponseDTO.setMessage("Payment processed successfully via Apple Pay");
+            paymentResponseDTO.setMessage("Payment processed successfully via Apple Pay!");
             paymentResponseDTO.setStatus("SUCCESS");
         }else{
             paymentResponseDTO.setMessage("Payment method not supported");
